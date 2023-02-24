@@ -93,17 +93,17 @@ recognition.onresult = (event) => {
   }
 
   // If the current file has reached its maximum duration, write the transcript to a file and rotate the file
-if (Date.now() - startTime > maxFileDuration) {
-console.log('Max file duration reached, rotating file');
+  if (Date.now() - startTime > maxFileDuration) {
+    console.log('Max file duration reached, rotating file');
 
-// Replace any remaining military phonetic alphabet characters
-Object.keys(phoneticAlphabet).forEach((key) => {
-transcript = transcript.replace(new RegExp(key, 'ig'), phoneticAlphabet[key]);
-});
-writeToFile(transcript);
-transcript = '';
-startTime = Date.now();
-}
+    // Replace any remaining military phonetic alphabet characters
+    Object.keys(phoneticAlphabet).forEach((key) => {
+    transcript = transcript.replace(new RegExp(key, 'ig'), phoneticAlphabet[key]);
+    });
+    writeToFile(transcript);
+    transcript = '';
+    startTime = Date.now();
+  }
 };
 
 // Write the transcript to a file
