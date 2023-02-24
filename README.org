@@ -1,0 +1,30 @@
+#+title: EAM Listener
+#+author: Adam Poniatowski
+#+date: 2023-02-23
+
+The EAM Listener tool is a JavaScript script that listens to your desktop audio and converts speech to text using the Web Audio API and the SpeechRecognition API.
+
+** Installation
+
+To use the EAM Listener tool, you need to have a browser that supports the Web Audio API and the SpeechRecognition API, such as Google Chrome. You also need to have a userscript manager installed, such as Greasemonkey or Tampermonkey.
+
+To install the EAM Listener tool:
+
+1. Create a new userscript in your userscript manager.
+2. Copy and paste the EAM Listener code into the userscript.
+3. Save the userscript.
+
+** Usage
+
+To use the EAM Listener tool:
+
+1. Open the web page or application that you want to listen to.
+2. Enable desktop audio capture in your browser. You can usually do this by clicking on the lock icon in the address bar and selecting "Site settings", then selecting "Microphone" or "Audio" and choosing "Allow".
+3. Open the userscript manager and enable the EAM Listener userscript.
+4. Wait for the tool to detect sound. Once sound is detected, the tool will start converting speech to text and output the text to a file.
+5. If there is a pause of more than 5 seconds, the tool will rotate the file and replace any remaining military phonetic alphabet characters with their corresponding alphabetic characters.
+
+** Customization
+
+You can customize the behavior of the EAM Listener tool by modifying the script. For example, you can change the maximum file duration or the filename format. You can also modify the list of military phonetic alphabet characters and their corresponding alphabetic characters.
+
