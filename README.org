@@ -24,6 +24,15 @@ To use the EAM Listener tool:
 4. Wait for the tool to detect sound. Once sound is detected, the tool will start converting speech to text and output the text to a file.
 5. If there is a pause of more than 5 seconds, the tool will rotate the file and replace any remaining military phonetic alphabet characters with their corresponding alphabetic characters.
 
+** Additional notes:
+
+In Firefox (tested with Greasemonkey), make sure to enable the following in `about:config`, by switching them to `true`:
+- `media.webspeech.recognition.enable`
+- `media.webspeech.recognition.force_enable`
+
+In Chrome based browsers:
+- Still testing... having issues with brave browser not running the script (Tampermonkey)
+
 ** Customization
 
 You can customize the behavior of the EAM Listener tool by modifying the script. For example, you can change the maximum file duration or the filename format. You can also modify the list of military phonetic alphabet characters and their corresponding alphabetic characters.
